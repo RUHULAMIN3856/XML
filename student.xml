@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE school [<!ELEMENT school (student)*>
+<!ATTLIST student sid CDATA "s1">
+<!ELEMENT student (name,class)>
+<!ELEMENT name (#PCDATA)*>
+<!ELEMENT class (#PCDATA)*>]>
+<school>
+  <student sid ="s1">
+    <name>Zakir</name>
+    <class>Ten</class>
+  </student>
+  <student sid ="s2">
+    <name>Rahim</name>
+    <class>Nine</class>
+  </student>
+  <student sid ="s3">
+    <name>Karim</name>
+    <class>Eight</class>
+  </student>
+  <student sid ="s4">
+    <name>Karim Ali</name>
+    <class>Seven</class>
+  </student>
+  <student sid ="s5">
+    <name>jashim Uddin</name>
+    <class>Six</class>
+  </student>
+</school>

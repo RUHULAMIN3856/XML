@@ -1,0 +1,60 @@
+
+<html>
+<head>
+    <script>
+   function loadXMLDoc() {
+	var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      
+    }
+  };
+  xmlhttp.open("GET", "student.xml" , true);
+  xmlhttp.send();
+}
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            document.getElementById("p1").innerHTML ="Name :"+
+            xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;+"<br/>"+
+			xmlDoc.getElementsByTagName("class")[0].childNodes[0].nodeValue;
+        } 
+//function myFunction(xml) {
+//  var x, i, xmlDoc, table;
+//  xmlDoc = xml.responseXML;
+//  table = "<tr><th>Student Name</th><th>Class</th></tr>";
+//  x = xmlDoc.getElementsByTagName("student")
+// for (i = 0; i < x.length; i++) { 
+//    table += "<tr><td>" + 
+//    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+//   "</td><td>" +
+ //   x[i].getElementsByTagName("class")[0].childNodes[0].nodeValue +
+//    "</td></tr>";
+//  }
+//         document.getElementById("showStudent").innerHTML = table;
+//}
+//function myFunction(xml) {
+     //       var x, i, xmlDoc;
+      //      xmlDoc = xml.responseXML;
+         
+      //      x = xmlDoc.getElementsByTagName("student")
+      //      for (i = 0; i < x.length; i++) { 
+                
+        //       "Student name :"+ x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+       //         "<br/>" +
+        //        "Class :"+x[i].getElementsByTagName("class")[0].childNodes[0].nodeValue +
+        //        "<br/>";
+        //    }
+        //    document.getElementById("showStudent").innerHTML = x;
+       // }
+    </script>
+   
+</head>
+<body>
+        <p><button onclick="loadXMLDoc()">Get Student</button></p>
+<p id="p1"></p>
+
+<table id="showStudent" border="1">
+
+</table>
+</body>
+</html>
