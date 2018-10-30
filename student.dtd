@@ -1,0 +1,8 @@
+<!ELEMENT school (exam)*>
+<!ATTLIST exam exid CDATA "ex1">
+<!ELEMENT exam (totalmark,obtainmark,examtopic,exmdate)>
+
+<!ELEMENT total (#PCDATA)*>
+<!ELEMENT obtain (#PCDATA)*>	
+<!ELEMENT topic (#PCDATA)*>
+<!ELEMENT date (#PCDATA)*>

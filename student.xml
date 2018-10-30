@@ -1,28 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE school [<!ELEMENT school (student)*>
 <!ATTLIST student sid CDATA "s1">
-<!ELEMENT student (name,class)>
+<!ELEMENT student (name,address,phone)>
 <!ELEMENT name (#PCDATA)*>
-<!ELEMENT class (#PCDATA)*>]>
+<!ELEMENT address (#PCDATA)*>
+<!ELEMENT phone (#PCDATA)*>
+]>
 <school>
   <student sid ="s1">
-    <name>Zakir</name>
-    <class>Ten</class>
+    <name>Ruhul Amin</name>
+    <address>Naogaon</address>
+    <phone>01765465455</phone>
   </student>
   <student sid ="s2">
-    <name>Rahim</name>
-    <class>Nine</class>
+    <name>Hossain</name>
+    <address>Dhaka</address>
+    <phone>01865465455</phone>
   </student>
   <student sid ="s3">
-    <name>Karim</name>
-    <class>Eight</class>
+    <name>Monir Hosain</name>
+    <address>Dhaka</address>
+    <phone>01685465455</phone>
   </student>
   <student sid ="s4">
-    <name>Karim Ali</name>
-    <class>Seven</class>
+    <name>Ruhul amin</name>
+    <address>Dhaka</address>
+    <phone>01965465455</phone>
   </student>
   <student sid ="s5">
-    <name>jashim Uddin</name>
-    <class>Six</class>
+    <name>Kajal sheak</name>
+    <address>Dhaka</address>
+    <phone>01365465455</phone>
   </student>
 </school>
